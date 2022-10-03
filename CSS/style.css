@@ -1,0 +1,300 @@
+/* commmon css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.text_center{
+    text-align: center;
+}
+.container{
+    width: 1170px ;
+    margin: auto;
+}
+.section_info{
+    text-align: center;
+    color: #7e8287;
+}
+.section_info h2{
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color:#02918b;
+
+}
+.section_info p b{
+    font-size: 23px;
+}
+
+/* common css End */
+
+/* nav section css  start*/
+nav{
+    background-color: #02918b;
+
+}
+nav .row{
+   
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width:20%;
+}
+.menu{
+    width: 80%;
+ 
+}
+nav .menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .menu ul li a{
+display: inline-block;
+font-size: 12px;
+color:#fff;
+font-weight:800;
+padding:26px 25px;
+text-transform:uppercase;
+transition:.5s;
+
+}
+nav .menu ul li a:hover{
+    color: #cfc91d;
+    background-color: black;
+    
+}
+
+/* nav section css end */
+
+
+/* banner section Start */
+#banner .container{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    
+}
+#banner{
+ 
+    background-image: url(../img/banner\ img.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+#banner::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.66;
+    background-color: black;
+    z-index:-1 ;
+ }
+ #banner .container{
+    height: 100%;
+ }
+#banner .row{
+   height: 100%;
+   justify-content: center;
+   align-items:center;
+}
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+
+}
+#banner p{
+    font-size: 18px;
+}
+#banner img{
+    display: block;
+    margin: 50px auto;
+}
+#banner a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800px;
+    background-color: #cfc91d;
+    padding: 17px 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/* banner section End */
+/* section_info Start */
+#about{
+    padding: 96px 0px;
+}
+#about .section_info{
+    margin-bottom: 80px;
+}
+#about .section_info p{
+    width: 875px;
+    margin:auto;
+    padding: 25px; 0px;
+}
+#about .about_item{
+    text-align: center;
+    padding: 36px 60px;
+    border-right: 1px solid #5e6767;
+    width: 25%;
+}
+#about .about_item:last-child{
+    border-right: none;
+}
+#about .about_item i{
+    color: #02918b;
+    font-size: 25px;
+}
+#about .about_item h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+}
+#about .about_item p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e8287;
+}
+
+/* section_info End */
+
+/* sercice item css start */
+#service{
+     background-image: url(../img/service\ bg.jpg);
+}
+#service .section_info{
+    width: 50%;
+    text-align: left;
+}
+#service .service_item{
+    width: 50%;
+}
+/* sercice item css End */
+/* my work section start */
+#my_work .section_info{
+    padding: 100px 0;
+}
+#my_work .section_info p{
+    width: 675px;
+    margin: auto;
+}
+#my_work .work_item{
+    width: 25%;
+     position: relative;
+
+}
+#my_work .work_item img{
+    width: 100%;
+    display: block;
+}
+#my_work .work_item .overlay{
+    width: 190px;
+}
+#my_work .work_item .overlay{
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    top: 20px;
+    bottom: 20px;
+    background-color: rgba(2,145,149,0.85);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+/* my work section End */
+#contact .section_info{
+    padding: 100px 0;
+}
+#contact .section_info p{
+    width: 675px;
+    margin: auto;
+}
+
+
+/* from sectin start */
+#contact .contact_from{
+    background-color: #0a0a0b;
+    padding: 70px;
+}
+#contact .contact_from input,
+#contact .contact_from textarea{
+    color: #7e8287;
+    display: block;
+    margin: auto;
+    background: none;
+    border: none;
+    border-bottom: 1px solid#7e8287;
+    font-size: 16px;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#contact .contact_from input.small{
+    width: 640px;
+
+}
+#contact .contact_from input .large{
+width: 916px;
+}
+#contact .contact_from textarea{
+    resize: horizontal;
+    font-family: sans-serif;
+}
+#contact .contact_from button{
+    border: none;
+    font-size: 14px;
+    color:#0b1016;
+    font-weight:800;
+    padding:15px 40px;
+    text-transform:uppercase;
+    transition:.5s;
+    background-color: #cfc91d;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    }
+    
+/* from sectin End */
+/* footer start */
+footer{
+    background-color: #000;
+    text-align: center;
+    font-size: 12px;
+    color: #7e8287;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+
+
+
